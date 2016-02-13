@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20160216T164000Z
+DTEND:20160216T170000Z
+DTSTAMP:20160211T164637Z
+ORGANIZER;CN=barbara.diagne@aims-senegal.org:mailto:barbara.diagne@aims-sen
+ egal.org
+UID:5kr9go5vgiitfqlvdu81do938o@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=barbara.diagne@aims-senegal.org;X-NUM-GUESTS=0:mailto:barbara.diagne@ai
+ ms-senegal.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=El Hadji Ngom;X-NUM-GUESTS=0:mailto:elhadji.ngom@aims-senegal.org
+CREATED:20160211T161752Z
+DESCRIPTION:Cv and Cover Letter review\nAffichez votre événement sur la pag
+ e https://www.google.com/calendar/event?action=VIEW&eid=NWtyOWdvNXZnaWl0ZnF
+ sdmR1ODFkbzkzOG8gZWxoYWRqaS5uZ29tQGFpbXMtc2VuZWdhbC5vcmc&tok=MzEjYmFyYmFyYS
+ 5kaWFnbmVAYWltcy1zZW5lZ2FsLm9yZ2QwODQxNGM5ZDBjZmVjMDlhZDZjODQ1ZjhjZGJkNTA5Y
+ Tc5MDhlNjI&ctz=Africa/Abidjan&hl=fr.
+LAST-MODIFIED:20160211T164637Z
+LOCATION:My Office
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:ElHadji RDV
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

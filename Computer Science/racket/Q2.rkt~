@@ -1,0 +1,16 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname Q2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
+; Question 2
+;interval-proper-subset: -> 2 intervals lile [x y] and [z t]
+;Numbers
+
+(define (interval-proper-subset x y z t) 
+  (cond
+    [(and (< x y) (< z t)) (or (and (<= x e) (<= e y)) (and (<= z e) (<= e t)))]
+    [else "Notpossible"]))
+ 
+; test of my program
+(check-expect (interval-proper-subset 2 3 4 5) (or (and (<= 2 e) (<= e 3)) (and (<= 4 e) (<= e 5))))
+;Example:
+(interval-proper-subset 2 4 6 8)

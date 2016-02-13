@@ -1,0 +1,32 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname first) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+; Question 2
+;interval-proper-subset?: -> 2 intervals lile [x y] and [z t]
+;Numbers:
+(check-expect (interval-proper-subset? 1 4 3 5) false)
+(check-expect (interval-proper-subset? 2 4 5 6) false)
+(check-expect (interval-proper-subset? 2 3 2 3) true)
+(check-expect (interval-proper-subset? 1 3 2 5) false)
+(check-expect (interval-proper-subset? 1 3 2 7) false)
+(check-expect (interval-proper-subset? 2 4 1 3) false)
+(check-expect (interval-proper-subset? 4 5 1 2) false)
+(check-expect (interval-proper-subset? 1 5 2 4) true)
+(check-expect (interval-proper-subset? 1 2 1 3) false)
+
+(define (interval-proper-subset? x y z t)
+  (cond
+    [(and (< x z y) (>= t y))             false]
+    [(and (< x y) (< z t) (<= y z))       false]
+    [(and (<= z x) (<= y t) (< x y))       true]
+    [(and (<=  x z) (<= t y) (< z t))       true]
+    [(and (< x z) (< z y) (< y t))        false]
+    [(and (< z x) (< x y) (< t y))        false]
+    [(and (< t x) (< x y) (< z t))        false]))
+
+; Test of my program:
+(check-expect (interval-proper-subset? 2 4 2 5) true)
+(check-expect (interval-proper-subset? 4.5 5.5 2 6) true)
+; Example:
+(interval-proper-subset? 0.5 3 0 5)
+(interval-proper-subset? 0.5 5 1 2)
